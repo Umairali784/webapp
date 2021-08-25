@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+				<!-------for jquery test--------
+				<script type="text/javascript">
+          $(document).ready(function(){
+             if (jQuery) {  
+               // jQuery is loaded  
+               alert("Yeah!");
+             } else {
+               // jQuery is not loaded
+               alert("Doesn't Work");
+             }
+          });
+        </script>------->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<title>Test Document</title>
+		
+	</head>
+	<body >
+		<div class="container bg-light rounded-lg p-5 m-5">
+			<div>
+				<h2>Registration Form<br> <hr></h2>
+			</div>
+			<div class="container bg-light">
+				<form method="post" action="">
+					<div class="row">
+						 <label><h5>Personal Information</h5></label>
+					</div>
+					<!----1st Row end here----->
+					<div class="row">
+						<div class="col-lg-6 col-md-6 ">
+							<label for="fname">User Name</label>
+							<input type="text" class="form-control" id="fname" placeholder="Full Name">
+						</div> <!---------2nd row 1st column-------->
+						<div class="col-lg-6 col-md-6 ">
+							<label for="exampleFormControlInput1">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="name@example.com">
+						</div> <!---------2nd row 2nd column-------->
+					</div><!---------2nd row end here -------->
+					<div class="row">
+						<div class="form-group col-lg-6 col-md-6">
+							<label for="password">Password</label>
+							<input type="password" class="form-control" id="password" placeholder="Alphanumeric">
+						</div><!---------3rd row 1st column-------->
+						<div class="form-group col-lg-6 col-md-6">
+							<label for="retype">Confirm Password</label>
+							<input type="password" class="form-control" id="retype" placeholder="Retype">
+						</div><!---------3rd row 2nd column-------->
+					</div><!---------3rd row end here-------->
+					<div class="row mt-3">
+						<label><h5>Professional Information</h5></label>
+					</div><!---------4th row end here-------->
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<label for="password">Date Of Joining</label>
+							<input type="date" class="form-control" id="dot" placeholder="">
+						</div><!---------5th row 1st column-------->
+						<div class="col-lg-6 col-md-6 " >
+							<label for="role">Working Role</label>
+							<select class="form-control" id="role" name="role"> 
+								<option selected disabled>Select..</option>
+								<option value="developer">Developer</option>
+								<option value="tester">Tester</option>
+								<option value="analyst">Analyst</option>
+								<option value="manager">Manager</option>
+							</select>
+						</div><!---------5th row 2nd column-------->
+					</div><!---------5th row 1end here-------->
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<label for="reportto">Report To</label>
+							<input type="text" class="form-control" id="reportto" placeholder="Manager Name">
+						</div><!---------6th row 1st column-------->
+						<div class="col-lg-6 col-md-6 " >
+							<label for="nature">Job Nature</label>
+							<select class="form-control " id="nature" name="nature"> 
+								<option selected disabled>Select..</option>
+								<option value="ptime">Part Time</option>
+								<option value="ftime">Full Time</option>
+								<option value="htime">Hourly Basis</option>
+							</select>
+						</div><!---------6th row 2nd column-------->
+					</div><!---------6th row end here-------->
+					<div class="row">
+						<div class="col-lg-6 col-md-10 col-sm-10 mt-2">
+							<label for="team">
+								Member Of &nbsp;&nbsp;&nbsp;&nbsp;
+							</label>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input " type="checkbox" id="team" name="Alpha">
+								<label class="form-check-label" for="team">Alpha</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="team" name="Bravo">
+								<label class="form-check-label" for="team">Bravo</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="team" name="Charle">
+								<label class="form-check-label" for="team">Charle</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="team" name="Delta">
+								<label class="form-check-label" for="team">Delta</label>
+							</div>
+						</div>
+					</div><!---------7th row 1st column-------->
+					<div class="row m-3">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="team" name="term">
+							<label class="form-check-label" for="term"><b>I agree to the Terms and Conditions</b> </label>
+						</div>
+					</div><!---------8th row 1st column-------->
+					<div class="row">
+						<div class="btn-group">
+						  <button type="submit" class="btn btn-secondary btn block" name="submit" id="submit">Submit</button><br>
+						  <button type="reset" class="btn btn-info" name="reset" id="reset">Reset</button>
+						</div>
+					</div>
+			  </form>	<!----form end here----->
+			</div>	<!----Inner container end here----->
+		</div><!----outer container end here----->
+	</body><!----body end here----->
+</html>
+<!-------------<div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
+    </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
+</div>
+				    <body>
+				</html>
+						<div class="form-group">
+				    <label for="exampleFormControlInput1">Email address</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+				  </div>
+				  <div class="form-group">
+				    <label for="role1">Working Role</label>
+				    <select class="form-control" id="role">
+				      <option selected disabled="">Select....</option>
+				      <option value="developer">Developer</option>
+				      <option value="tester">Tester</option>
+				      <option value="analyst">Analyst</option>
+				      <option value="manager">Manager</option>
+				      
+
+				    </select>
+				   
+				  </div>
+				</div>
+	  	</div>
+    
+  
+  
+		  <h1 class="display-4" style="text-align: center;">Hello, world!</h1>
+		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		  <hr class="my-4">
+		  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  	</form>
+</div>
+
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="">----------->
+
